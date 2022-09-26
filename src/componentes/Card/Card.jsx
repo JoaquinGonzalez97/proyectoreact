@@ -1,5 +1,5 @@
-import Button from "../../Button/Button";
-import "./card.css";
+import Button from "../Button/Button";
+
 
 export default function Card(props) {
   // estilos

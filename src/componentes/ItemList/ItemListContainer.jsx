@@ -1,13 +1,12 @@
 import React from "react";
 import Card from "../Card/Card";
-import FlexWrapper from "../FlexWrapper/FlexWrapper";
-import "./itemlistcontainer.css";
+//import "./ItemlistContainer.css";
 
 function ItemListContainer(props) {
   return (
     <div className="container">
-      <h1>Titulo</h1>
-      <FlexWrapper>
+      <h1>{props.greeting}</h1>
+      
         <Card
           img="https://www.seoptimer.com/es/blog/wp-content/uploads/2020/06/uiux.png"
           title="UX/UI"
@@ -46,7 +45,7 @@ function ItemListContainer(props) {
           detail="Aprende VueJS desde cero!"
           price="70"
         />
-      </FlexWrapper>
+      
     </div>
   );
 }

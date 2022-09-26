@@ -1,17 +1,16 @@
-import logo from './logo.svg';
+
 import './App.css';
-import  {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
+import ItemListContainer from './componentes/ItemList/ItemListContainer';
 import Navbar from './componentes/Navbar'
-import inicio from './componentes/paginas/Inicio'
-import inicio from './componentes/paginas/Items'
+
 
 
 function App() {
   return (
     <div className="App">
-        <Router>   
-         <Navbar/> 
-        </Router>
+         <Navbar/>
+         <ItemListContainer greeting="¡Les damos la bienvenida!"/> 
+
     </div>
   );
 }
