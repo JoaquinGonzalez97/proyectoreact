@@ -6,3 +6,11 @@
     text-align: center;
     max-width: 1200px;
   }
+
+
+.item {
+  display: flex;
+  justify-Content: space-around;
+  align-items: center;
+  flex-Wrap: wrap;
+}

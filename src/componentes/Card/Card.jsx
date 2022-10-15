@@ -1,4 +1,5 @@
 import Button from "../Button/Button";
+import {link} from "react-router-dom"
 
 
 export default function Card(props) {
@@ -33,8 +34,10 @@ export default function Card(props) {
           {props.offer ? <p>Oferta!</p> : <></>}$ {props.price}
         </h4>
       </div>
-
+      <link to={`/item/${props.id}`}>
       <Button>{`Apredende ${props.title}`}</Button>
+      </link>
+      
     </div>
   );
 }
