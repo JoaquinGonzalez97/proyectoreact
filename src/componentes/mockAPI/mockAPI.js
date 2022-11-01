@@ -2,7 +2,7 @@ const data = [
     {
       id: 1,
       title: "UX/UI",
-      img: "https://www.seoptimer.com/es/blog/wp-content/uploads/2020/06/uiux.png",
+      img: "https://www.seopthttps://http2.mlstatic.com/D_NQ_NP_953555-MLA49325983744_032022-O.webpimer.com/es/blog/wp-content/uploads/2020/06/uiux.png",
       price: 95,
       expired: true,
       detail: "Aprende Diseño UX/UI desde cero!",

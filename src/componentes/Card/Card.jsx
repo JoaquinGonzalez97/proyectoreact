@@ -1,5 +1,5 @@
 import Button from "../Button/Button";
-import {link} from "react-router-dom"
+import {Link} from "react-router-dom"
 
 
 export default function Card(props) {
