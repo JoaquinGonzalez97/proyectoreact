@@ -1,7 +1,7 @@
 import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
-import { getCursos, getCursosByCategory } from "../mockAPI/mockAPI";
+import { getProductos, getProductosByCategory } from "../mockAPI/mockAPI";
 import ItemList from "./ItemList";
 import {useParams} from "react-router-dom" 
 
@@ -9,15 +9,15 @@ import {useParams} from "react-router-dom"
 //import "./ItemlistContainer.css";
 
 function ItemListContainer(props) {
-  const [cursos, setCursos]= useState([])
+  const [productos, setUnProducto]= useState([])
   const  {categoryid} = useParams ()
   useEffect (()=>{
     if (categoryid){
-    getCursosByCategory(categoryid)
-         .then((resp)=> setCursos(resp))
+    getProductosByCategory(categoryid)
+         .then((resp)=> setProductos(resp))
     }else{
-      getCursos()
-      .then((resp)=>setCursos(resp))
+      getProductos()
+      .then((resp)=>setProductos(resp))
     }
     
   },[categoryid])

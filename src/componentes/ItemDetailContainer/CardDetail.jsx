@@ -2,14 +2,14 @@ import React from "react";
 
 import "./itemdetail.css";
 
-function CardDetail({ curso }) {
+function CardDetail({ producto }) {
   return (
     <div className="detail-container">
       
         <div className="main container">
-          <h1>{curso.title}</h1>
-          <img src={curso.img} alt={curso.title} />
-          <h3>$ {curso.price}</h3>
+          <h1>{producto.title}</h1>
+          <img src={producto.img} alt={producto.title} />
+          <h3>$ {producto.price}</h3>
         </div>
         
       

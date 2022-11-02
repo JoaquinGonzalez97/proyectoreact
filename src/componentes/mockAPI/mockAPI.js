@@ -61,26 +61,26 @@ const data = [
     },
   ];
   
-  export function getCursos() {
+  export function getUnProducto() {
     return new Promise((resolve) => {
       setTimeout(() => resolve(data), 2000);
     });
   }
   
-  export function getUnCurso(idParams) {
+  export function getUnProducto(idParams) {
     return new Promise((resolve) => {
       let cursoReq = data.find((item) => {
         return item.id === Number(idParams);
       });
-      setTimeout(() => resolve(cursoReq), 2000);
+      setTimeout(() => resolve(productoReq), 2000);
     });
   }
   
-  export function getCursosByCategory(idCategoryParams) {
+  export function getProductoByCategory(idCategoryParams) {
     return new Promise((resolve) => {
-      let arrayFilterCourses = data.filter(
+      let arrayFilterProducts = data.filter(
         (item) => item.category === idCategoryParams
       );
-      setTimeout(() => resolve(arrayFilterCourses), 2000);
+      setTimeout(() => resolve(arrayFilterProducts), 2000);
     });
   }
