@@ -15,8 +15,8 @@ const Navbar = () => {
     <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div className="navbar-nav">
         <Link className="nav-link active" aria-current="page" to='/'>Inicio</Link>
-        <Link className="nav-link" to='/category/programacion'>Programacion</Link>
-        <Link className="nav-link" to='/category/diseno'>Diseño</Link>
+        <Link className="nav-link" to='/category/insumo'>insumos</Link>
+        <Link className="nav-link" to='/category/periferico'>periferico</Link>
         <CardWidget/>
       </div>
     </div>
